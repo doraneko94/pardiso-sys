@@ -1,2 +1,4 @@
 # pardiso-sys
-The package provides bindings to PARDISO.
+The package provides bindings to [PARDISO].
+
+[PARDISO]: https://www.pardiso-project.org/
