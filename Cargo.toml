@@ -1,7 +1,17 @@
 [package]
 name = "pardiso-sys"
 version = "0.1.0"
-authors = ["doraneko94 <shuntaro94@gmail.com>"]
+licence = "Apache-2.0/MIT"
+authors = [
+    "Shuntaro Ohno <shuntaro94@gmail.com>"
+]
+description = "The package provides bindings to PARDISO."
+documentation = "https://docs.rs/pardiso-sys"
+homepage = "https://github.com/doraneko94/pardiso-sys"
+repository = "https://github.com/doraneko94/pardiso-sys"
+readme = "README.md"
+categories = ["external-ffi-bindings", "science"]
+keywords = ["linear-algebra"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
