@@ -90,7 +90,7 @@ extern "C" {
     );
     pub fn mkl_pardiso_pivot(
         aii: *const c_double,
-        bii: *const c_double,
+        bii: *mut c_double,
         eps: *const c_double,
     ) -> c_int;
     pub fn pardiso_getdiag(
