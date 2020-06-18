@@ -63,16 +63,16 @@ extern "C" {
     pub fn pardiso_handle_store_64(
         pt: *mut _mkl_dss_handle_t,
         dirname: *const c_char,
-        error: *mut mkl_int,
+        error: *mut c_longlong,
     );
     pub fn pardiso_handle_restore_64(
         pt: *mut _mkl_dss_handle_t,
         dirname: *const c_char,
-        error: *mut mkl_int,
+        error: *mut c_longlong,
     );
     pub fn pardiso_handle_delete_64(
         dirname: *const c_char,
-        error: *mut mkl_int,
+        error: *mut c_longlong,
     );
     pub fn pardiso_handle_store(
         pt: *mut _mkl_dss_handle_t,
@@ -89,9 +89,9 @@ extern "C" {
         error: *mut mkl_int,
     );
     pub fn mkl_pardiso_pivot(
-        aii: *const c_double,
-        bii: *mut c_double,
-        eps: *const c_double,
+        aii: *const c_void,
+        bii: *mut c_void,
+        eps: *const c_void,
     ) -> c_int;
     pub fn pardiso_getdiag(
         pt: *const _mkl_dss_handle_t,
