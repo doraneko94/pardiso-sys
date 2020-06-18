@@ -7,7 +7,7 @@
 
 extern crate libc;
 
-use libc::{c_char, c_double, c_int, c_longlong, c_void};
+use libc::{c_char, c_int, c_longlong, c_void};
 pub type mkl_int = c_int;
 pub type _mkl_dss_handle_t = c_void;
 
